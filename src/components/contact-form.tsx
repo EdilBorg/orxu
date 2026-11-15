@@ -46,7 +46,7 @@ export function ContactForm() {
           />
           {errorMessage(errors.name) ? (
             <p className="form-error" id="contact-name-error" role="alert">
-              {errors.name.message}
+              {errors.name?.message}
             </p>
           ) : null}
         </div>
@@ -66,7 +66,7 @@ export function ContactForm() {
           />
           {errorMessage(errors.email) ? (
             <p className="form-error" id="contact-email-error" role="alert">
-              {errors.email.message}
+              {errors.email?.message}
             </p>
           ) : null}
         </div>
@@ -95,7 +95,7 @@ export function ContactForm() {
         </select>
         {errorMessage(errors.category) ? (
           <p className="form-error" id="contact-category-error" role="alert">
-            {errors.category.message}
+            {errors.category?.message}
           </p>
         ) : null}
       </div>
@@ -115,7 +115,7 @@ export function ContactForm() {
         />
         {errorMessage(errors.message) ? (
           <p className="form-error" id="contact-message-error" role="alert">
-            {errors.message.message}
+            {errors.message?.message}
           </p>
         ) : (
           <p className="form-note" id="contact-message-limit">

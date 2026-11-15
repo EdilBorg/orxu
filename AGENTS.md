@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+<!-- AGENT-MEMORY:BEGIN -->
+- Keep ORXU's Portuguese copy and product/service definitions in shared modules, with separate file-based pages and shared site chrome for consistent content as the company grows.
+<!-- AGENT-MEMORY:END -->

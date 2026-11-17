@@ -118,8 +118,8 @@ function ProductsPage() {
                   <img
                     src={shot.src}
                     alt={shot.alt}
-                    width={1296}
-                    height={610}
+                    width={1200}
+                    height={565}
                     loading="lazy"
                     decoding="async"
                   />

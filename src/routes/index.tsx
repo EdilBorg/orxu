@@ -98,8 +98,8 @@ function Index() {
           <div className="page-frame">
             <SectionHeading
               label="Portefólio próprio"
-              title={<>Produtos em construção, ideias em evolução.</>}
-              description="Cada produto tem uma direcção específica. O seu estado é apresentado com transparência."
+              title={<>Produtos digitais próprios</>}
+              description="Cada produto tem uma direcção específica. O estado indica o ponto actual de cada projecto."
             />
             <div className="products-list">
               {products.map((product, index) => (
@@ -141,26 +141,20 @@ function Index() {
           <div className="page-frame">
             <SectionHeading
               label="Korvex"
-              title={<>Automação inteligente para conversas comerciais no WhatsApp.</>}
-              description="Uma plataforma desenvolvida pela ORXU para centralizar conversas, organizar o atendimento e automatizar interacções comerciais através do WhatsApp."
+              title={<>Gestão e automação de conversas comerciais pelo WhatsApp.</>}
+              description="Uma plataforma para gerir conversas, organizar o atendimento e configurar fluxos de automação através do WhatsApp."
             />
-            <p className="product-shot-caption" style={{ marginBottom: "1.25rem" }}>
-              Produto desenvolvido pela ORXU.
-            </p>
             <figure className="product-feature-shot">
               <div className="product-shot-frame product-shot-frame-large">
                 <img
                   src="/images/products/korvex/inicio.jpg"
-                  alt="Ecrã inicial do Korvex com apresentação da plataforma de automação de conversas no WhatsApp."
+                  alt="Ecrã de entrada do Korvex."
                   width={1296}
                   height={610}
                   loading="lazy"
                   decoding="async"
                 />
               </div>
-              <figcaption className="product-shot-caption">
-                Ecrã de entrada do Korvex
-              </figcaption>
             </figure>
           </div>
         </section>

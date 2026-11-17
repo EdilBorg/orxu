@@ -147,7 +147,7 @@ function Index() {
             <figure className="product-feature-shot">
               <div className="product-shot-frame product-shot-frame-large">
                 <img
-                  src="/images/products/korvex/inicio.jpg"
+                  src="/images/products/korvex/inicio.png"
                   alt="Ecrã de entrada do Korvex."
                   width={1296}
                   height={610}

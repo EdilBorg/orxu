@@ -12,7 +12,7 @@ export const products = [
     name: "Korvex",
     category: "Comunicação empresarial · WhatsApp",
     summary:
-      "Plataforma em desenvolvimento para ajudar empresas a gerir conversas via WhatsApp e a estruturar fluxos de interação com clientes.",
+      "Plataforma para gerir conversas, organizar o atendimento e configurar fluxos de automação através do WhatsApp.",
     status: "Em desenvolvimento",
     statusDetail: "Produto em desenvolvimento; as funcionalidades podem evoluir.",
     direction: [

@@ -12,7 +12,7 @@ export const Route = createFileRoute("/products")({
       {
         name: "description",
         content:
-          "Explore Korvex, Maps Leads Finder e BOWIS: produtos digitais próprios da ORXU, apresentados com o seu estado de desenvolvimento actual.",
+          "Explore Korvex, Maps Leads Finder e BOWIS: produtos digitais próprios da ORXU.",
       },
       { property: "og:title", content: "Produtos digitais — ORXU" },
       {
@@ -28,24 +28,19 @@ export const Route = createFileRoute("/products")({
 
 const korvexScreens = [
   {
-    src: "/images/products/korvex/inicio.jpg",
-    alt: "Ecrã de entrada do Korvex com a apresentação da plataforma.",
-    caption: "Entrada",
-  },
-  {
     src: "/images/products/korvex/dashboard.jpg",
-    alt: "Painel de gestão do Korvex com métricas e estado da conta.",
-    caption: "Painel de gestão",
+    alt: "Dashboard e gestão da plataforma Korvex.",
+    caption: "Dashboard e gestão",
   },
   {
     src: "/images/products/korvex/conexao.jpg",
-    alt: "Ecrã de ligação do Korvex ao WhatsApp.",
+    alt: "Ligação e configuração do WhatsApp no Korvex.",
     caption: "Ligação ao WhatsApp",
   },
   {
     src: "/images/products/korvex/fluxo.jpg",
     alt: "Configuração de automações e fluxos no Korvex.",
-    caption: "Configuração de automações",
+    caption: "Automações e fluxos",
   },
 ] as const;
 
@@ -56,20 +51,19 @@ function ProductsPage() {
         <section className="page-frame page-intro-block">
           <span className="eyebrow">Portefólio próprio</span>
           <h1 className="page-title">
-            Produtos em desenvolvimento, <em>para desafios concretos.</em>
+            Produtos próprios
           </h1>
           <p className="page-intro">
-            A ORXU concebe, desenvolve, gere e comercializa os seus próprios produtos digitais. Cada
-            projecto tem uma direcção específica e o estado abaixo indica com clareza o que está
-            confirmado.
+            A ORXU concebe, desenvolve e gere os seus próprios produtos digitais. Cada projecto tem
+            uma direcção específica; o estado indica o ponto actual.
           </p>
         </section>
 
         <section className="page-frame section-block section-rule">
           <SectionHeading
-            label="Produtos ORXU"
+            label="Catálogo"
             title={<>Três projectos. Diferentes necessidades de negócio.</>}
-            description="As descrições apresentam o foco e a direcção de cada produto, não uma lista de funcionalidades confirmadas em produção."
+            description="As descrições apresentam o foco e a direcção de cada produto."
           />
           <div className="catalogue-list">
             {products.map((product) => (
@@ -114,12 +108,9 @@ function ProductsPage() {
         <section className="page-frame section-block section-rule" aria-labelledby="korvex-visual-title">
           <SectionHeading
             label="Korvex"
-            title={<>Automação inteligente para conversas comerciais no WhatsApp.</>}
-            description="Uma plataforma desenvolvida pela ORXU para centralizar conversas, organizar o atendimento e automatizar interacções comerciais através do WhatsApp."
+            title={<>Interface do Korvex</>}
+            description="Alguns dos principais ecrãs da plataforma."
           />
-          <p className="product-shot-caption" style={{ marginBottom: "1.5rem" }}>
-            Produto desenvolvido pela ORXU.
-          </p>
           <div className="product-shots-grid">
             {korvexScreens.map((shot) => (
               <figure className="product-shot" key={shot.src}>
@@ -136,22 +127,6 @@ function ProductsPage() {
                 <figcaption className="product-shot-caption">{shot.caption}</figcaption>
               </figure>
             ))}
-          </div>
-        </section>
-
-        <section className="page-frame section-block section-rule">
-          <div className="split-story">
-            <div>
-              <span className="eyebrow">Transparência</span>
-            </div>
-            <div>
-              <h2 className="story-heading">Direcção de produto não é promessa de disponibilidade.</h2>
-              <p className="story-copy story-copy-spaced">
-                Os produtos apresentados encontram-se em desenvolvimento. Os conceitos e as áreas
-                de trabalho identificam a sua direcção conhecida; não significam que todas as
-                funcionalidades estejam actualmente disponíveis ou prontas para produção.
-              </p>
-            </div>
           </div>
         </section>
 

@@ -28,24 +28,24 @@ export const Route = createFileRoute("/products")({
 
 const korvexScreens = [
   {
+    src: "/images/products/korvex/inicio.jpg",
+    alt: "Ecrã de entrada do Korvex com a apresentação da plataforma.",
+    caption: "Entrada",
+  },
+  {
     src: "/images/products/korvex/dashboard.jpg",
-    alt: "Dashboard do Korvex com estado da assinatura, tokens e métricas de actividade.",
-    caption: "Dashboard — visão geral da plataforma",
+    alt: "Painel de gestão do Korvex com métricas e estado da conta.",
+    caption: "Painel de gestão",
   },
   {
     src: "/images/products/korvex/conexao.jpg",
-    alt: "Página de Conexões do Korvex para ligar canais WhatsApp e outras integrações.",
-    caption: "Conexões — canais e integrações",
+    alt: "Ecrã de ligação do Korvex ao WhatsApp.",
+    caption: "Ligação ao WhatsApp",
   },
   {
     src: "/images/products/korvex/fluxo.jpg",
-    alt: "Flow Builder do Korvex com blocos visuais de automação de conversas.",
-    caption: "Fluxos — automação visual de conversas",
-  },
-  {
-    src: "/images/products/korvex/inicio.jpg",
-    alt: "Ecrã de apresentação do Korvex com demonstração de atendimento automático via WhatsApp.",
-    caption: "Apresentação — demonstração de atendimento",
+    alt: "Configuração de automações e fluxos no Korvex.",
+    caption: "Configuração de automações",
   },
 ] as const;
 
@@ -113,10 +113,13 @@ function ProductsPage() {
 
         <section className="page-frame section-block section-rule" aria-labelledby="korvex-visual-title">
           <SectionHeading
-            label="Korvex · Interface"
-            title={<>Capturas reais da plataforma em desenvolvimento.</>}
-            description="Estas imagens mostram a interface actual do Korvex: dashboard, ligações de canais e o construtor visual de fluxos."
+            label="Korvex"
+            title={<>Automação inteligente para conversas comerciais no WhatsApp.</>}
+            description="Uma plataforma desenvolvida pela ORXU para centralizar conversas, organizar o atendimento e automatizar interacções comerciais através do WhatsApp."
           />
+          <p className="product-shot-caption" style={{ marginBottom: "1.5rem" }}>
+            Produto desenvolvido pela ORXU.
+          </p>
           <div className="product-shots-grid">
             {korvexScreens.map((shot) => (
               <figure className="product-shot" key={shot.src}>

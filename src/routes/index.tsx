@@ -141,14 +141,17 @@ function Index() {
           <div className="page-frame">
             <SectionHeading
               label="Korvex"
-              title={<>Interface real de um produto em desenvolvimento.</>}
-              description="O Korvex é uma plataforma da ORXU orientada à gestão e automação de conversas via WhatsApp."
+              title={<>Automação inteligente para conversas comerciais no WhatsApp.</>}
+              description="Uma plataforma desenvolvida pela ORXU para centralizar conversas, organizar o atendimento e automatizar interacções comerciais através do WhatsApp."
             />
+            <p className="product-shot-caption" style={{ marginBottom: "1.25rem" }}>
+              Produto desenvolvido pela ORXU.
+            </p>
             <figure className="product-feature-shot">
               <div className="product-shot-frame product-shot-frame-large">
                 <img
-                  src="/images/products/korvex/dashboard.jpg"
-                  alt="Dashboard do Korvex com assinatura, tokens de IA e métricas de fluxos, contactos e conversas."
+                  src="/images/products/korvex/inicio.jpg"
+                  alt="Ecrã inicial do Korvex com apresentação da plataforma de automação de conversas no WhatsApp."
                   width={1296}
                   height={610}
                   loading="lazy"
@@ -156,7 +159,7 @@ function Index() {
                 />
               </div>
               <figcaption className="product-shot-caption">
-                Dashboard do Korvex — visão geral da plataforma
+                Ecrã de entrada do Korvex
               </figcaption>
             </figure>
           </div>

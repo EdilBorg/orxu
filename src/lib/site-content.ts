@@ -52,6 +52,7 @@ export const products = [
       "Operações de venda e gestão comercial",
       "Relatórios e registos de negócio na direcção do produto",
     ],
+    url: null,
     accent: "var(--blue-ink)",
   },
 ] as const;

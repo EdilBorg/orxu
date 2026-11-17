@@ -2,6 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 
+import orxuSymbol from "@/assets/orxu-symbol.svg";
 import { siteNavigation } from "@/lib/site-content";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
@@ -18,7 +19,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <header className="site-header">
         <div className="page-frame header-inner">
           <Link className="wordmark" to="/" aria-label="ORXU — página inicial" onClick={closeMenu}>
-            ORXU
+            <img className="wordmark-symbol" src={orxuSymbol} alt="" aria-hidden="true" />
+            <span className="wordmark-name">ORXU</span>
             <span>TECNOLOGIA</span>
           </Link>
 
@@ -83,7 +85,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="page-frame footer-main">
           <div className="footer-brand">
             <Link className="wordmark" to="/" aria-label="ORXU — página inicial">
-              ORXU
+              <img className="wordmark-symbol" src={orxuSymbol} alt="" aria-hidden="true" />
+              <span className="wordmark-name">ORXU</span>
               <span>TECNOLOGIA</span>
             </Link>
             <p className="footer-description">
